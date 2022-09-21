@@ -1,13 +1,4 @@
 
-/* .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9 {
-  background-color: blueviolet;
-  color: aquamarine;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-} */
-
-/* .row1 {
-  @extend %box_style;
-} */
 
 h1 {
 	font-size: 50px;
@@ -17,11 +8,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* background-color: gray;
-	color: blueviolet; */
+	background-color: gray;
+	color: aquamarine;
 	margin: 50px;
-	/* width: max-content;
-	height: max-content; */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+	font-size: 25px;
 }
 
 .bord {
@@ -35,7 +29,29 @@ body {
 	/* margin: -1px; */
 }
 
+button {
+	margin: 20px;
+	width: 90px;
+	height: 35px;
+	font-size: 18px;
+    cursor: pointer;
+    padding-left: 19px;
+    padding-right: 19px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: #ffffff;
+    border-color: blueviolet;
+}
+
+button:hover{
+	background-color: aquamarine;
+    border-color: aquamarine;
+    color: rgb(114, 114, 114);
+}
+
 #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9 {
+	background-color: gray;
 	border: 5px blueviolet;
 	clear: both;
 	margin: -2px;
@@ -44,6 +60,11 @@ body {
 	color: aquamarine;
 	font-size: 100px;
 	text-align: center;
+}
+
+#box1:hover, #box2:hover, #box2:hover, #box3:hover, #box4:hover, #box5:hover, #box6:hover, #box7:hover, #box8:hover, #box9:hover {
+	background-color: rgb(114, 114, 114);
+	cursor: pointer;
 }
 
 #box1 {
